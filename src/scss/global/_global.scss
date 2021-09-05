@@ -31,9 +31,13 @@
 .--dir-col {
 	flex-direction: column;
 }
-
+:root{
+	font-size: 10px;
+}
 html,
 body {
 	min-height: 100%;
-	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 500;
 }
