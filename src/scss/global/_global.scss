@@ -41,3 +41,14 @@ body {
 	font-size: 1.8rem;
 	font-weight: 500;
 }
+.container{
+   @include container('1180px', '10px');
+}
+h1,h2,h3,h4{
+	font-family: 'Intro', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -0.04em;
+}
+h1{
+	font-size: 55px;
+}
