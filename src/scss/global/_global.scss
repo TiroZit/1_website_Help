@@ -34,24 +34,52 @@
 :root{
 	font-size: 10px;
 }
+img{
+	pointer-events: none;// СЛОМАЮТСЯ КАРТИНКИ ТО ВИНА В ЭТОМ!!!
+}
 html,
 body {
 	min-height: 100%;
+	color: $colorBlack;
 	font-family: 'Montserrat', sans-serif;
 	font-size: $f18;
 	font-weight: 500;
+	overflow-x: hidden;
 }
 .container{
-   @include container('1180px', '10px');
+   @include container('1190px', '10px');
+	position: relative;
 }
-h1,h2,h3,h4{
+.--container-972{
+	@include container('992px', '10px');
+}
+.text{
+   font-size: $f24;
+   line-height: 121%;
+}
+h1,h2,h3{
 	font-family: 'Intro', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: -0.04em;
 }
-h1{
+h1,
+h2{
 	font-size: $f55;
+}
+h2{
+	color: $colorBlue;
+	line-height: 80%;
+}
+h4, h5{
+	font-weight: 600;
+	color: $colorBlue;
+	font-size: $f24;
+	line-height: 121%;
+}
+h5{
+	color: inherit;
+	font-weight: 500;
 }
 a{
 	transition: all 0.3s ease 0s;
@@ -64,6 +92,7 @@ a:hover{
 	transition: all 0.3s ease 0s;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+	line-height: 122%;
 }
 .btn:hover{
 	box-shadow: 0px 0px 20px #fff;

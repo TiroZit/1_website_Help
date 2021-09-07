@@ -2,28 +2,32 @@
    background-color: $colorBlue;
    color: #fff;
    min-height: 929px;
-   position: relative;
    background-image: url("data:image/svg+xml;charset=utf8, %3Csvg viewBox='0 0 1440 308' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M979.909 44.407C1121.94-13.85 1357.15-2.522 1457 10.424V292H-511V83.853c21.021-13.148 101.313-39.446 254.311-39.446 191.248 0 365.359 75.857 568.945 115.301 203.586 39.445 490.115-42.48 667.653-115.3z' fill='%23666EA0'/%3E%3Cpath d='M336.576 90.085C227.743 38.81 47.512 48.78-29 60.175V308h1508V124.802c-16.11-11.572-77.63-34.718-194.87-34.718-146.54 0-279.96 66.765-435.958 101.481-156 34.717-375.556-37.388-511.596-101.48z' fill='%23fff'/%3E%3C/svg%3E");
    background-repeat: no-repeat;
    background-position: bottom;
 }
 .header-hat{
+   min-height: 43.5px;
    padding-top: 30px;
+}
+.menu{
+   margin-right: -10px;
 }
 .menu__link{
    margin: 0 10px;
+   line-height: 122%;
 }
 .header-main{
    position: relative;
 }
 .header-whale-top{
    position: absolute;
-   top: 0;
+   top: 70px;
    left: -135px;
 }
 .header-whale-bottom{
    position: absolute;
-   top: 230px;
+   top: 300px;
    right: -180px;
    transform: rotate(-16deg);
 }
@@ -34,27 +38,25 @@
    align-items: center;
    text-align: center;
 }
+.header-main > *:not(:last-child){
+   padding-bottom: 50px;
+}
 .header-main__title{
    width: 648px;
-}
-.text{
-   padding-top: 50px;
-   font-size: $f24;
-   line-height: 29px;
 }
 .header-fon{
    margin-top: -10px;
 }
 .header-btn-list{
-   padding-top: 50px;
+}
+.header-btn-list > *:not(:last-child){
+   margin-right: 20px;
 }
 .header-btn--white{
    padding: 16px 35px;
-   margin: 0 10px;
 }
 .header-btn--inherit{
    border: 3px solid #FFFFFF;
    font-size: $f18;
    padding: 13px 25px;
-   margin: 0 10px;
 }

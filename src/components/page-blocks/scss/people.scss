@@ -1,0 +1,28 @@
+.people{
+   padding-top: 150px;
+}
+.--people{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+.people__text{
+   width: 651px;
+   padding-top: 37px;
+}
+.slider{
+   display: flex;
+   padding-top: 80px;
+}
+.slider__item{
+}
+.slider__item:not(:last-child){
+   padding-right: 33px;
+}
+.slider__title{
+   padding-top: 10px;
+}
+.slider__subtitle{
+   padding-top: 5px;
+}

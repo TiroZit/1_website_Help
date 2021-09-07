@@ -1,0 +1,23 @@
+.biz__text{
+   padding-top: 24px;
+   width: 575px;
+}
+.video{
+   position: relative;
+   margin-top: 80px;
+}
+.btn-play{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   padding: 32px 33px 32px 33px;
+   position: absolute;
+   top: 40%;
+   right: 43%;
+   z-index: 1;
+}
+.biz-video{
+   border-radius: 30px;
+   backdrop-filter: blur(20px);
+}
