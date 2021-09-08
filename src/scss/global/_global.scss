@@ -62,14 +62,21 @@ h1,h2,h3{
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: -0.04em;
+	color: $colorBlue;
 }
 h1,
 h2{
 	font-size: $f55;
 }
+h1{
+	color: #fff;
+}
 h2{
-	color: $colorBlue;
 	line-height: 80%;
+}
+h3{
+	font-size: $f48;
+	line-height: 96%;
 }
 h4, h5{
 	font-weight: 600;
@@ -105,4 +112,93 @@ a:hover{
 .--btn-blue{
 	background-color: $colorBlue;
 	color: #fff;
+}
+.tg, .insta, .facebook, .vk{
+	transition: all 0.3s ease 0s;
+	fill: #fff;
+}
+.tg:hover{
+	fill: #2ba0d9;
+}
+.insta:hover{
+	fill: #c13584;
+}
+.facebook:hover{
+	fill: #4064ac;
+}
+.vk:hover{
+	fill: #4e7db2;
+}
+/* Слайдер */
+.slick-slider{
+	position: relative;
+	width: 1014px;
+	margin: 0 auto;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+   overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+/* Слайд */
+.slick-slide{
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+   content: '';
+   position: absolute;
+   font-size: 0;
+   top: 45%;
+   padding: 0;
+	background-repeat: no-repeat;
+   background-position: center;
+	background-color: inherit;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+   width: 42px;
+   height: 63px;
+	left: -60px;
+   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='42' height='63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 31.5L31.294 0 42 10.61 21.247 31.5 42 52.39 31.294 63 0 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
+}
+.slick-arrow.slick-prev:hover{
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+   width: 42px;
+   height: 63px;
+	background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='42' height='63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 31.5L10.706 0 0 10.61 20.753 31.5 0 52.39 10.706 63 42 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
+   right: -60px;
+}
+.slick-arrow.slick-next:hover{
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{
+}
+.slick-dots li{
+}
+/* Активная точка */
+.slick-dots li.slick-active{
+}
+/* Элемент точки */
+.slick-dots li button{
+}
+.slick-dots li.slick-active button{
 }

@@ -1,1 +1,68 @@
-<footer class="footer"></footer>
+<footer class="footer">
+   <div class="container flex --dir-col">
+      <div class="logo">
+         <a href="#">
+            @@include('../bem-blocks/_sprite.html',{
+               "class":"logo",
+               "width":"width: 138px;",
+               "height":"height: 43.5px;",
+               "id":"css--logo",
+            })
+         </a>
+      </div>
+      <div class="footer__main flex --align-center --just-center">
+         <div class="footer__list flex --dir-col">
+            <a class="footer__link" href="#">
+               Политика конфеденциальности
+            </a>
+            <a class="footer__link" href="#">
+               Мобильная версия сайта
+            </a>
+         </div>
+         <div class="footer__contacts">
+            <div class="social">
+               <a class="social__link" href="telegram.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"tg",
+                     "width":"width: 35px;",
+                     "height":"height: 29px;",
+                     "id":"css--tg",
+                  })
+               </a>
+               <a class="social__link" href="instagram.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"insta",
+                     "width":"width: 35px;",
+                     "height":"height: 35px;",
+                     "id":"css--insta",
+                  })
+               </a>
+               <a class="social__link" href="facebook.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"facebook",
+                     "width":"width: 35px;",
+                     "height":"height: 35px;",
+                     "id":"css--facebook",
+                  })
+               </a>
+               <a class="social__link" href="vk.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"vk",
+                     "width":"width: 35px;",
+                     "height":"height: 20px;",
+                     "id":"css--vk",
+                  })
+               </a>
+            </div>
+            <a href="mailto:help@gmail.com">
+               хелп@gmail.com
+            </a>
+         </div>
+      </div>
+      <div class="copy">
+         <div class="">
+            design by a.chibichik
+         </div>
+      </div>
+   </div>
+</footer>
