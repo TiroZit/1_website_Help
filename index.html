@@ -30,7 +30,7 @@
 	<header class="header">
    <div class="container">
       <div class="header-hat flex --just-space --align-center">
-         <a href="#">
+         <a class="logo-link" href="#">
             <svg class="logo" style="width: 138px; height: 43.5px;">
   <use xlink:href="img/sprite.svg#css--logo" />
 </svg>
@@ -46,13 +46,19 @@
             <a class="menu__link" href="#">
                Для бизнеса
             </a>
-            <a class="menu__link" href="#">
+            <a class="sign-in menu__link" href="#">
                Войти
             </a>
+            <button class="burger">
+               <svg class="burger-svg" style="width: 30px; height: 12px;">
+  <use xlink:href="img/sprite.svg#css--burger" />
+</svg>
+
+            </button>
          </nav>
       </div>
       <img class="header-whale-top" src="./../../img/whale1.png" alt="whale1">
-      <div class="header-main">
+      <div class="header-main wrapper">
          <h1 class="header-main__title">
             Смотрим на мир доходным взглядом
          </h1>
@@ -61,12 +67,12 @@
             Есть любимый бизнес – доведем до совершенства
          </p>
          <div class="header-btn-list flex">
-            <button class="btn header-btn--white --btn-white">
+            <a class="btn header-btn--white --btn-white" href="#">
                Хочу научиться
-            </button>
-            <button class="btn header-btn--inherit --btn-blue">
+            </a>
+            <a class="btn header-btn--inherit --btn-blue" href="#">
                Есть свой бизнес
-            </button>
+            </a>
          </div>
       </div>
       <img class="header-whale-bottom" src="./../../img/whale2.png" alt="whale2">
@@ -85,7 +91,7 @@
       </p>
       <div class="video">
          <button class="btn btn-play">
-            <svg class="play" style="width: 50px; height: 50px;">
+            <svg class="play" style="max-width: 50px; max-height: 50px;">
   <use xlink:href="img/sprite.svg#css--play" />
 </svg>
 
@@ -94,7 +100,7 @@
       </div>
    </div>
 </section>
-		<section class="people">
+		<section class="people wrapper">
    <div class="container">
       <div class="people__info">
          <h2 class="title">
@@ -180,7 +186,7 @@
       </div>
    </div>
 </section>
-		<section class="skill">
+		<section class="skill wrapper">
    <div class="container flex --dir-col --align-center">
       <h2 class="title">
          ЧТО МЫ УМЕЕМ
@@ -194,9 +200,9 @@
             <p class="text skill__text">
                Поможем создать бизнес с нуля и заставим его приносить прибыль
             </p>
-            <button class="btn --btn-blue skill__btn">
+            <a class="btn --btn-blue skill__btn" href="#">
                Научиться
-            </button>
+            </a>
          </div>
          <div class="skill__item">
             <img src="./../../img/skill2.svg" alt="">
@@ -206,24 +212,22 @@
             <p class="text skill__text">
                Бизнес всегда находится в динамике. Сделаем динамику твоего дела положительной, а результаты – максимальными
             </p>
-            <button class="btn --btn-blue skill__btn">
+            <a class="btn --btn-blue skill__btn" href="#">
                Упаковаться
-            </button>
+            </a>
          </div>
       </div>
    </div>
 </section>
 	</main>
-	<footer class="footer">
+	<footer class="footer wrapper">
    <div class="container flex --dir-col">
-      <div class="logo">
-         <a href="#">
+         <a class="footer__logo-link" href="#">
             <svg class="logo" style="width: 138px; height: 43.5px;">
   <use xlink:href="img/sprite.svg#css--logo" />
 </svg>
 
          </a>
-      </div>
       <div class="footer__main flex --align-center --just-center">
          <div class="footer__list flex --dir-col">
             <a class="footer__link" href="#">
@@ -260,7 +264,7 @@
 
                </a>
             </div>
-            <a href="mailto:help@gmail.com">
+            <a class="social__mail" href="mailto:help@gmail.com">
                хелп@gmail.com
             </a>
          </div>
