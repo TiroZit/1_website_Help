@@ -1,5 +1,4 @@
 .footer{
-   margin-top: 150px;
    padding-top: 50px;
    min-height: 300px;
    background-color: $colorBlue;
@@ -7,6 +6,9 @@
 }
 .footer__main{
    padding-top: 40px;
+}
+.footer__link{
+   text-decoration: underline;
 }
 .footer__list>*:not(:last-child),
 .footer__contacts>*:not(:last-child){
@@ -25,4 +27,21 @@
 .copy{
    align-self: end;
    padding-top: 20px;
+}
+@media (max-width: 768px) {
+   .footer{
+      min-height: 265px;
+   }
+   .footer__main{
+      flex-direction: column;
+      align-items: start;
+      padding: 0;
+   }
+   .footer__contacts{
+      padding: 50px 0 0 0;
+   }
+   .footer__logo-link,
+   .social__mail{
+      display: none;
+   }
 }

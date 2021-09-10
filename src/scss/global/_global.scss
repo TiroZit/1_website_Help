@@ -31,9 +31,6 @@
 .--dir-col {
 	flex-direction: column;
 }
-:root{
-	font-size: 10px;
-}
 img{
 	pointer-events: none;// СЛОМАЮТСЯ КАРТИНКИ ТО ВИНА В ЭТОМ!!!
 }
@@ -46,12 +43,21 @@ body {
 	font-weight: 500;
 	overflow-x: hidden;
 }
+.wrapper{
+	margin-top: 150px;
+}
 .container{
    @include container('1190px', '10px');
 	position: relative;
 }
 .--container-972{
 	@include container('992px', '10px');
+}
+.logo-link{
+	transition: all 0.3s ease 0s;
+}
+.logo-link:hover{
+	filter: drop-shadow(0px 0px 10px #fff);
 }
 .text{
    font-size: $f24;
@@ -64,10 +70,19 @@ h1,h2,h3{
 	letter-spacing: -0.04em;
 	color: $colorBlue;
 }
+a{
+	color: inherit;
+}
 h1,
 h2{
+	// font-size: calc(44px + 4 * ((100vw - 768px) / (1024 - 768)));
 	font-size: $f55;
 }
+// @media (max-width: 640px){
+// 	h1{
+// 		font-size: calc(36px + 10 * ((100vw - 640px) / (768 - 640)));
+// 	}
+// }
 h1{
 	color: #fff;
 }
@@ -91,7 +106,7 @@ h5{
 a{
 	transition: all 0.3s ease 0s;
 }
-a:hover{
+a:hover:not(.btn){
 	text-shadow: 0px 0px 20px #fff;
 }
 .btn{
@@ -201,4 +216,25 @@ a:hover{
 .slick-dots li button{
 }
 .slick-dots li.slick-active button{
+}
+@media (max-width: 1024px) {
+	.container,
+	.--container-972{
+		@include container('844px', '10px');
+	}
+}
+@media (max-width: 768px) {
+	.wrapper{
+		margin-top: 60px;
+	}
+	.container,
+	.--container-972{
+		@include container('679px', '10px');
+	}
+}
+@media (max-width: 640px) {
+	.container,
+	.--container-972{
+		@include container('540px', '10px');
+	}
 }

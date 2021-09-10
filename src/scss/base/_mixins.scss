@@ -9,7 +9,6 @@
 		font-display: swap;
 	}
 }
-
 @mixin bg ($size:"contain", $position: "center") {
 	background-size: #{$size};
 	background-position: #{$position};

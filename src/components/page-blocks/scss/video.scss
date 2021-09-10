@@ -18,6 +18,26 @@
    z-index: 1;
 }
 .biz-video{
+   width: 100%;
+   max-width: 972px;
    border-radius: 30px;
    backdrop-filter: blur(20px);
+}
+@media (max-width: 1024px) {
+   .play{
+      width: 40px;
+      height: 40px;
+   }
+	.btn-play{
+      padding: 26px 25px 24px 25px;
+   }
+}
+@media (max-width: 640px) {
+   .play{
+      width: 25px;
+      height: 25px;
+   }
+	.btn-play{
+      padding: 15px 15px 15px 15px;
+   }
 }

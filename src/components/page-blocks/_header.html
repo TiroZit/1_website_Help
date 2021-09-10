@@ -1,7 +1,7 @@
 <header class="header">
    <div class="container">
       <div class="header-hat flex --just-space --align-center">
-         <a href="#">
+         <a class="logo-link" href="#">
             @@include('../bem-blocks/_sprite.html',{
                "class":"logo",
                "width":"width: 138px;",
@@ -19,13 +19,21 @@
             <a class="menu__link" href="#">
                Для бизнеса
             </a>
-            <a class="menu__link" href="#">
+            <a class="sign-in menu__link" href="#">
                Войти
             </a>
+            <button class="burger">
+               @@include('../bem-blocks/_sprite.html',{
+                  "class":"burger-svg",
+                  "width":"width: 30px;",
+                  "height":"height: 12px;",
+                  "id":"css--burger",
+               })
+            </button>
          </nav>
       </div>
       <img class="header-whale-top" src="./../../img/whale1.png" alt="whale1">
-      <div class="header-main">
+      <div class="header-main wrapper">
          <h1 class="header-main__title">
             Смотрим на мир доходным взглядом
          </h1>
@@ -34,12 +42,12 @@
             Есть любимый бизнес – доведем до совершенства
          </p>
          <div class="header-btn-list flex">
-            <button class="btn header-btn--white --btn-white">
+            <a class="btn header-btn--white --btn-white" href="#">
                Хочу научиться
-            </button>
-            <button class="btn header-btn--inherit --btn-blue">
+            </a>
+            <a class="btn header-btn--inherit --btn-blue" href="#">
                Есть свой бизнес
-            </button>
+            </a>
          </div>
       </div>
       <img class="header-whale-bottom" src="./../../img/whale2.png" alt="whale2">

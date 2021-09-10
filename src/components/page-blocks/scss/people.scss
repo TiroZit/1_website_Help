@@ -1,5 +1,4 @@
 .people{
-   padding-top: 150px;
 }
 .people__info{
    display: flex;
@@ -24,4 +23,10 @@
 }
 .slider__subtitle{
    padding-top: 5px;
+}
+@media (max-width: 1024px) {
+   .people__info > .title{
+      max-width: 598px;
+      text-align: center;
+   }
 }
