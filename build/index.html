@@ -29,7 +29,7 @@
 <body>
 	<header class="header">
    <div class="container">
-      <div class="header-hat flex --just-space --align-center">
+      <div class="header-hat">
          <a class="logo-link" href="#">
             <svg class="logo" style="width: 138px; height: 43.5px;">
   <use xlink:href="img/sprite.svg#css--logo" />
@@ -37,50 +37,63 @@
 
          </a>
          <nav class="menu">
-            <a class="menu__link" href="#">
-               Продукты
-            </a>
-            <a class="menu__link" href="#">
-               Обучение
-            </a>
-            <a class="menu__link" href="#">
-               Для бизнеса
-            </a>
-            <a class="sign-in menu__link" href="#">
-               Войти
-            </a>
-            <button class="burger">
-               <svg class="burger-svg" style="width: 30px; height: 12px;">
+            <ul class="menu__list">
+               <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                     Продукты
+                  </a>
+               </li>
+               <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                     Обучение
+                  </a>
+               </li>
+               <li class="menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                     Для бизнеса
+                  </a>
+               </li>
+               <li class="sign-in menu__list-item">
+                  <a class="menu__list-item-link" href="#">
+                     Войти
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <button class="burger">
+            <svg class="burger-svg" style="width: 30px; height: 12px;">
   <use xlink:href="img/sprite.svg#css--burger" />
 </svg>
 
-            </button>
-         </nav>
+         </button>
       </div>
-      <img class="header-whale-top" src="./../../img/whale1.png" alt="whale1">
-      <div class="header-main wrapper">
-         <h1 class="header-main__title">
+   </div>
+</header>
+
+	<main class="main">
+		<section class="header-content">
+   <div class="container">
+      <img class="header-content__whale-top" src="img/whale1.png" alt="whale1">
+      <div class="header-content-main">
+         <h1 class="header-content__title">
             Смотрим на мир доходным взглядом
          </h1>
          <p class="text">
             Есть любимое дело – монетизируем<br>
             Есть любимый бизнес – доведем до совершенства
          </p>
-         <div class="header-btn-list flex">
-            <a class="btn header-btn--white --btn-white" href="#">
+         <div class="header-content__btn-list flex">
+            <a class="btn header-content__btn--white --btn-white" href="#">
                Хочу научиться
             </a>
-            <a class="btn header-btn--inherit --btn-blue" href="#">
+            <a class="btn header-content__btn--inherit --btn-blue" href="#">
                Есть свой бизнес
             </a>
          </div>
       </div>
-      <img class="header-whale-bottom" src="./../../img/whale2.png" alt="whale2">
+      <img class="header-content__whale-bottom" src="img/whale2.png" alt="whale2">
    </div>
-
-</header>
-
-	<main class="main">
+</section>
 		<section class="biz">
    <div class="--container-972">
       <h2 class="title">
@@ -96,7 +109,7 @@
 </svg>
 
          </button>
-         <video class="biz-video" src="" poster="./../../img/video-poster.jpg"></video>
+         <video class="biz-video" src="" poster="/img/video-poster.jpg"></video>
       </div>
    </div>
 </section>
@@ -112,7 +125,7 @@
       </div>
       <div class="slider">
          <div class="slider__item">
-            <img src="./../../img/man1.jpg" alt="man">
+            <img src="/img/man1.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -121,7 +134,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man2.jpg" alt="man">
+            <img src="/img/man2.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -130,7 +143,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man3.jpg" alt="man">
+            <img src="/img/man3.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -139,7 +152,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man4.jpg" alt="man">
+            <img src="/img/man4.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -148,7 +161,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man1.jpg" alt="man">
+            <img src="/img/man1.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -157,7 +170,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man2.jpg" alt="man">
+            <img src="/img/man2.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -166,7 +179,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man3.jpg" alt="man">
+            <img src="/img/man3.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -175,7 +188,7 @@
             </h5>
          </div>
          <div class="slider__item">
-            <img src="./../../img/man4.jpg" alt="man">
+            <img src="/img/man4.jpg" alt="man">
             <h4 class="slider__title">
                Иван Иванов
             </h4>
@@ -193,7 +206,7 @@
       </h2>
       <div class="skill__list">
          <div class="skill__item">
-            <img src="./../../img/skill1.svg" alt="">
+            <img src="/img/skill1.svg" alt="">
             <h3 class="skill__title">
                Обучаем
             </h3>
@@ -205,7 +218,7 @@
             </a>
          </div>
          <div class="skill__item">
-            <img src="./../../img/skill2.svg" alt="">
+            <img src="/img/skill2.svg" alt="">
             <h3 class="skill__title">
                развиваем
             </h3>

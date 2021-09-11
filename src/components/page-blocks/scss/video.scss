@@ -7,11 +7,8 @@
    margin-top: 80px;
 }
 .btn-play{
-   display: flex;
-   justify-content: center;
-   align-items: center;
    border-radius: 50%;
-   padding: 32px 33px 32px 33px;
+   padding: 31px 33px;
    position: absolute;
    top: 40%;
    right: 43%;
@@ -29,7 +26,7 @@
       height: 40px;
    }
 	.btn-play{
-      padding: 26px 25px 24px 25px;
+      padding: 24px 25px;
    }
 }
 @media (max-width: 640px) {
@@ -38,6 +35,6 @@
       height: 25px;
    }
 	.btn-play{
-      padding: 15px 15px 15px 15px;
+      padding: 15px;
    }
 }
