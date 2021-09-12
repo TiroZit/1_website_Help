@@ -9,32 +9,76 @@
 }
 .header-hat{
    display: flex;
-   justify-content: space-between;
    align-items: center;
 }
 .burger{
    display: none;
    background-color: transparent;
+   width: 35px;
+   height: 15px;
+   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg viewBox='0 0 30 14' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' d='M1 1h27.989M1 6.998h27.989M1 12.996h27.989'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: 1;
+   transition: all 0.3s ease 0s;
+}
+.burger--active{
+   display: none;
+   background-color: transparent;
+   width: 35px;
+   height: 20px;
+   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg fill='%23fff' viewBox='0 0 329.269 329' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M194.8 164.77L323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0015.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0015.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: 1;
 }
 .menu{
-   margin-right: -10px;
+   overflow: auto;
 }
 .menu__list{
    display: flex;
 }
-.menu__list-item-link{
+.menu__link{
    margin: 0 10px;
    line-height: 122%;
 }
+.logo-link{
+   margin: 0 auto 0 0;
+}
+.sign-in{
+   margin: 0 -10px 0 0;
+}
 @media (max-width: 768px) {
-   .logo-link{
-      margin: 0 auto 0 0;
-   }
    .menu{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 1;
+      width: 50%;
+      height: 100%;
+      background-color: $colorBlue;
+      transition: right 0.3s ease 0s;
       margin-right: 0;
    }
-   .menu__list>li:not(.sign-in){
-      display: none;
+   .active{
+      right: 0;
+   }
+   .menu__list{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 45px;
+   }
+   .menu__link{
+      display: block;
+      width: 100%;
+      font-size: 24px;
+      margin: 0;
+   }
+   .sign-in{
+      margin: 0 15px;
+   }
+   .menu__list-item{
+      margin: 15px 0;
    }
    .burger{
       display: block;

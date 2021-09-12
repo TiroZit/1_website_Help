@@ -43,6 +43,9 @@ body {
 	font-weight: 500;
 	overflow-x: hidden;
 }
+body.lock{
+	overflow: hidden;
+}
 .wrapper{
 	margin-top: 150px;
 }
