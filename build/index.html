@@ -38,11 +38,11 @@
          </a>
          <nav class="menu">
             <ul class="menu__list">
-               <li class="menu__list-item">
+               <div class="menu__list-item">
                   <a class="menu__link" href="#">
                      Продукты
                   </a>
-               </li>
+               </div>
                <li class="menu__list-item">
                   <a class="menu__link" href="#">
                      Обучение
@@ -54,9 +54,35 @@
                   </a>
                </li>
             </ul>
+            <div class="social--menu">
+               <a class="social__link--menu" href="telegram.com">
+                  <svg class="tg" style="width: 35px; height: 29px;">
+  <use xlink:href="img/sprite.svg#css--tg" />
+</svg>
+
+               </a>
+               <a class="social__link--menu" href="instagram.com">
+                  <svg class="insta" style="width: 35px; height: 35px;">
+  <use xlink:href="img/sprite.svg#css--insta" />
+</svg>
+
+               </a>
+               <a class="social__link--menu" href="facebook.com">
+                  <svg class="facebook" style="width: 35px; height: 35px;">
+  <use xlink:href="img/sprite.svg#css--facebook" />
+</svg>
+
+               </a>
+               <a class="social__link--menu" href="vk.com">
+                  <svg class="vk" style="width: 35px; height: 20px;">
+  <use xlink:href="img/sprite.svg#css--vk" />
+</svg>
+
+               </a>
+            </div>
          </nav>
          <div class="sign-in">
-            <a class="sign-in__link" href="#">
+            <a class="sign-in__link popup-link" href="#popup">
                Войти
             </a>
          </div>
@@ -240,10 +266,10 @@
          </a>
       <div class="footer__main flex --align-center --just-center">
          <div class="footer__list flex --dir-col">
-            <a class="footer__link" href="#">
+            <a class="link" href="#">
                Политика конфеденциальности
             </a>
-            <a class="footer__link" href="#">
+            <a class="link" href="#">
                Мобильная версия сайта
             </a>
          </div>
@@ -280,13 +306,60 @@
          </div>
       </div>
       <div class="copy">
-         <div class="">
-            design by a.chibichik
-         </div>
+         design by a.chibichik
       </div>
    </div>
 </footer>
 
+	<div class="popup" id="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <button class="popup__close close-popup no-btn btn-close">
+            <svg class="close" style="width: 25px; height: 20px;">
+  <use xlink:href="img/sprite.svg#css--close" />
+</svg>
+
+         </button>
+         <form class="popup__form flex --dir-col" action="#">
+            <h4 class="popup__title">
+               Войти в аккаунт
+            </h4>
+            <div class="login flex --dir-col">
+               <label class="popup__subtitle" for="">
+                  Логин или e-mail:
+               </label>
+               <input class="popup__input popup__subtitle" type="text" placeholder="Логин или e-mail">
+            </div>
+            <div class="password flex --dir-col">
+               <div class="password__label">
+                  <label class="popup__subtitle" for="">
+                     Пароль:
+                  </label>
+                  <a class="popup__forgot popup__subtitle" href="#">
+                     Забыли пароль?
+                  </a>
+               </div>
+               <input class="popup__input popup__subtitle" type="password" placeholder="********">
+            </div>
+            <div class="remember-password flex">
+               <input class="remember-password__checkbox" tabindex="5" checked type="checkbox" name="agree" value="yes"/>
+               <label for="" class="remember-password__subtitle popup__text">
+                  Запомнить пароль
+               </label>
+            </div>
+            <p class="popup__text">
+               Нажимая войти, я принимаю условия <a class="link" href="#">Политики конфиденциальности</a> и даю согласие на обработку своих персональных данных
+            </p>
+            <button class="popup__form-btn sign-in__btn">
+               Войти
+            </button>
+            <a class="popup__transition popup__subtitle link" href="#">
+               Регистрация
+            </a>
+         </form>
+      </div>
+   </div>
+</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/_slick.min.js"></script>
 <script src="js/libs.min.js"></script>

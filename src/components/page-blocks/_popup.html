@@ -1,0 +1,51 @@
+<div class="popup" id="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <button class="popup__close close-popup no-btn btn-close">
+            @@include('../bem-blocks/_sprite.html',{
+               "class":"close",
+               "width":"width: 25px;",
+               "height":"height: 20px;",
+               "id":"css--close",
+            })
+         </button>
+         <form class="popup__form flex --dir-col" action="#">
+            <h4 class="popup__title">
+               Войти в аккаунт
+            </h4>
+            <div class="login flex --dir-col">
+               <label class="popup__subtitle" for="">
+                  Логин или e-mail:
+               </label>
+               <input class="popup__input popup__subtitle" type="text" placeholder="Логин или e-mail">
+            </div>
+            <div class="password flex --dir-col">
+               <div class="password__label">
+                  <label class="popup__subtitle" for="">
+                     Пароль:
+                  </label>
+                  <a class="popup__forgot popup__subtitle" href="#">
+                     Забыли пароль?
+                  </a>
+               </div>
+               <input class="popup__input popup__subtitle" type="password" placeholder="********">
+            </div>
+            <div class="remember-password flex">
+               <input class="remember-password__checkbox" tabindex="5" checked type="checkbox" name="agree" value="yes"/>
+               <label for="" class="remember-password__subtitle popup__text">
+                  Запомнить пароль
+               </label>
+            </div>
+            <p class="popup__text">
+               Нажимая войти, я принимаю условия <a class="link" href="#">Политики конфиденциальности</a> и даю согласие на обработку своих персональных данных
+            </p>
+            <button class="popup__form-btn sign-in__btn">
+               Войти
+            </button>
+            <a class="popup__transition popup__subtitle link" href="#">
+               Регистрация
+            </a>
+         </form>
+      </div>
+   </div>
+</div>

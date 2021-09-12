@@ -11,11 +11,11 @@
          </a>
          <nav class="menu">
             <ul class="menu__list">
-               <li class="menu__list-item">
+               <div class="menu__list-item">
                   <a class="menu__link" href="#">
                      Продукты
                   </a>
-               </li>
+               </div>
                <li class="menu__list-item">
                   <a class="menu__link" href="#">
                      Обучение
@@ -27,9 +27,43 @@
                   </a>
                </li>
             </ul>
+            <div class="social--menu">
+               <a class="social__link--menu" href="telegram.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"tg",
+                     "width":"width: 35px;",
+                     "height":"height: 29px;",
+                     "id":"css--tg",
+                  })
+               </a>
+               <a class="social__link--menu" href="instagram.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"insta",
+                     "width":"width: 35px;",
+                     "height":"height: 35px;",
+                     "id":"css--insta",
+                  })
+               </a>
+               <a class="social__link--menu" href="facebook.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"facebook",
+                     "width":"width: 35px;",
+                     "height":"height: 35px;",
+                     "id":"css--facebook",
+                  })
+               </a>
+               <a class="social__link--menu" href="vk.com">
+                  @@include('../bem-blocks/_sprite.html',{
+                     "class":"vk",
+                     "width":"width: 35px;",
+                     "height":"height: 20px;",
+                     "id":"css--vk",
+                  })
+               </a>
+            </div>
          </nav>
          <div class="sign-in">
-            <a class="sign-in__link" href="#">
+            <a class="sign-in__link popup-link" href="#popup">
                Войти
             </a>
          </div>

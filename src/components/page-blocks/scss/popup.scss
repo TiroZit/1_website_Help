@@ -1,0 +1,124 @@
+.popup{
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1001;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   opacity: 0;
+   visibility: hidden;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: all 0.8s ease 0s;
+}
+.popup.open{
+   opacity: 1;
+   visibility: visible;
+}
+.popup.open .popup__content{
+   opacity: 1;
+   transform: perspective(600px) translate(0px, 0%) rotate(0deg);
+}
+.popup__body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100%;
+   padding: 30px 10px;
+}
+.popup__content{
+   position: relative;
+   max-width: 353px;
+   background-color: #fff;
+   color: #A5A5A5;
+   border-radius: 20px;
+   transition: all 0.8s ease 0s;
+   opacity: 0;
+   transform: perspective(600px) translate(0px, -100%) rotate(-45deg);
+}
+.no-btn{
+   background-color: transparent;
+}
+.btn-close{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+.close{
+   fill: $colorBlue;
+}
+.popup__form{
+   align-items: center;
+   padding: 40px 20px;
+}
+.login,
+.password{
+   align-self: start;
+   width: 100%;
+   padding-bottom: 15px;
+}
+.password__label{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.remember-password{
+   display: flex;
+   align-self: end;
+   align-items: center;
+   padding-bottom: 10px;
+}
+.remember-password__checkbox{
+   width: 15px;
+   height: 15px;
+   border: 1px solid #A5A5A5;
+   border-radius: 5px;
+   margin-right: 10px;
+}
+.popup__title{
+   font-family: 'Intro', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+   padding-bottom: 30px;
+}
+.popup__subtitle{
+   font-size: $f14;
+   line-height: 17px;
+   color: $colorBlue;
+}
+.popup__forgot{
+   color: #A5A5A5;
+}
+.popup__subtitle:not(a, input){
+   padding-bottom: 8px;
+}
+.popup__input{
+   display: block;
+   width: 100%;
+   color: #D3D3D3;
+   border: 1px solid #A5A5A5;
+   border-radius: 20px;
+   padding: 20px;
+}
+.popup__text{
+   font-size: $f10;
+   line-height: 12px;
+}
+.popup__form-btn{
+   font-family: 'Intro', sans-serif;
+	font-weight: 700;
+   font-size: $f18;
+   line-height: 18px;
+   color: #fff;
+   text-transform: uppercase;
+   background: linear-gradient(129.15deg, #2A3993 3.9%, #727EC9 93.16%);
+   border-radius: 20px;
+}
+.sign-in__btn{
+   margin-top: 40px;
+   padding: 15px 76px;
+}
+.popup__transition{
+   padding-top: 10px;
+}
