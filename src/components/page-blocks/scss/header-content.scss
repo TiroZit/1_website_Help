@@ -43,8 +43,7 @@
 }
 @media (max-width: 1024px) {
    .header-content{
-      min-height: 529px;
-      padding-top: 60px;
+      min-height: 729px;
    }
    .header-content__whale-top,
    .header-content__whale-bottom{
@@ -53,8 +52,8 @@
 }
 @media (max-width: 768px) {
    .header-content{
-      min-height: 529px;
-      padding-top: 40px;
+      min-height: 600px;
+      padding-top: 90px;
    }
 }
 @media (max-width: 480px){

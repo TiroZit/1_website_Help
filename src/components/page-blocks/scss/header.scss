@@ -43,22 +43,25 @@
 }
 .menu__link{
    padding: 0 10px;
-
    line-height: 122%;
 }
 .sign-in{
    padding-left: 10px;
 }
 .logo-link{
-   margin: 0 auto 0 0;
+   flex-grow: 1;
 }
 .social--menu{
+   display: none;
+}
+.social__mail--header{
    display: none;
 }
 @media (max-width: 768px) {
    .menu{
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: space-between;
       position: fixed;
       top: 0;
@@ -76,7 +79,6 @@
    }
    .menu__list{
       flex-direction: column;
-      align-items: center;
       margin-top: 45px;
    }
    .menu__list-item{
@@ -92,14 +94,21 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      align-content: end;
       justify-content: center;
+      flex-grow: 1;
       margin: 20px 0;
    }
    .social__link--menu{
       padding: 10px;
    }
+   .social__mail--header{
+      display: block;
+      padding: 0 10px 20px 10px;
+   }
    .sign-in{
       margin: 0 15px;
+      padding: 0;
    }
    .menu__list-item{
       margin: 15px 0;

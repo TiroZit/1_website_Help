@@ -1,11 +1,12 @@
 .skill{
+   padding-bottom: 150px;
 }
 .skill__list{
    display: grid;
    justify-content: center;
    max-width: 100%;
    padding-top: 100px;
-   grid-template-columns: repeat(auto-fill, minmax(356px, 1fr));
+   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
    gap: 60px 111px;
 }
 .skill__item{
@@ -31,4 +32,12 @@
 }
 .skill__btn:hover{
    box-shadow: 0px 0px 15px $colorBlack;
+}
+@media (max-width: 768px){
+   .skill{
+      padding-bottom: 60px;
+   }
+   .skill__list{
+      padding-top: 50px;
+   }
 }
