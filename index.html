@@ -27,7 +27,8 @@
 
 
 <body>
-	<header class="header">
+	<div class="_wrapper">
+		<header class="header lock-padding">
    <div class="container">
       <div class="header-hat">
          <a class="logo-link" href="#">
@@ -82,7 +83,7 @@
             </div>
          </nav>
          <div class="sign-in">
-            <a class="sign-in__link popup-link" href="#popup">
+            <a class="sign-in__link popup-link" href="#popup-login">
                Войти
             </a>
          </div>
@@ -93,8 +94,8 @@
    </div>
 </header>
 
-	<main class="main">
-		<section class="header-content">
+		<main class="main">
+			<section class="header-content">
    <div class="container">
       <img class="header-content__whale-top" src="img/whale1.png" alt="whale1">
       <div class="header-content-main">
@@ -117,7 +118,7 @@
       <img class="header-content__whale-bottom" src="img/whale2.png" alt="whale2">
    </div>
 </section>
-		<section class="biz">
+			<section class="biz">
    <div class="--container-972">
       <h2 class="title">
          БИЗНЕС МНОГОГРАНЕН
@@ -136,7 +137,7 @@
       </div>
    </div>
 </section>
-		<section class="people wrapper">
+			<section class="people wrapper">
    <div class="container">
       <div class="people__info">
          <h2 class="title">
@@ -222,7 +223,7 @@
       </div>
    </div>
 </section>
-		<section class="skill wrapper">
+			<section class="skill wrapper">
    <div class="container flex --dir-col --align-center">
       <h2 class="title">
          ЧТО МЫ УМЕЕМ
@@ -255,7 +256,9 @@
       </div>
    </div>
 </section>
-	</main>
+		</main>
+
+	</div>
 	<footer class="footer wrapper">
    <div class="container flex --dir-col">
          <a class="footer__logo-link" href="#">
@@ -311,7 +314,7 @@
    </div>
 </footer>
 
-	<div class="popup" id="popup">
+	<div class="popup" id="popup-login">
    <div class="popup__body">
       <div class="popup__content">
          <button class="popup__close close-popup no-btn btn-close">
@@ -324,37 +327,104 @@
             <h4 class="popup__title">
                Войти в аккаунт
             </h4>
-            <div class="login flex --dir-col">
-               <label class="popup__subtitle" for="">
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
                   Логин или e-mail:
                </label>
-               <input class="popup__input popup__subtitle" type="text" placeholder="Логин или e-mail">
+               <input class="popup__input popup__subtitle f14_17" tabindex="1" type="text" placeholder="Логин или e-mail">
             </div>
-            <div class="password flex --dir-col">
+            <div class="popup__form-item">
                <div class="password__label">
-                  <label class="popup__subtitle" for="">
+                  <label class="popup__subtitle f14_17" for="">
                      Пароль:
                   </label>
-                  <a class="popup__forgot popup__subtitle" href="#">
+                  <a class="popup__forgot f14_17 link" href="#">
                      Забыли пароль?
                   </a>
                </div>
-               <input class="popup__input popup__subtitle" type="password" placeholder="********">
+               <input class="popup__input popup__subtitle f14_17" tabindex="2" type="password" placeholder="********">
             </div>
-            <div class="remember-password flex">
-               <input class="remember-password__checkbox" tabindex="5" checked type="checkbox" name="agree" value="yes"/>
-               <label for="" class="remember-password__subtitle popup__text">
+            <div class="checkbox flex">
+               <input class="checkbox__input" tabindex="3" checked type="checkbox" name="forgot" id="forgot" value="yes"/>
+               <label for="forgot" class="checkbox__subtitle popup__text">
                   Запомнить пароль
                </label>
             </div>
             <p class="popup__text">
                Нажимая войти, я принимаю условия <a class="link" href="#">Политики конфиденциальности</a> и даю согласие на обработку своих персональных данных
             </p>
-            <button class="popup__form-btn sign-in__btn">
+            <button class="popup__form-btn sign-in__btn" tabindex="4">
                Войти
             </button>
-            <a class="popup__transition popup__subtitle link" href="#">
+            <a class="popup__transition f14_17 popup-link link" href="#popup-reg">
                Регистрация
+            </a>
+         </form>
+      </div>
+   </div>
+</div>
+<div class="popup" id="popup-reg">
+   <div class="popup__body">
+      <div class="popup__content">
+         <button class="popup__close close-popup no-btn btn-close">
+            <svg class="close" style="width: 25px; height: 20px;">
+  <use xlink:href="img/sprite.svg#css--close" />
+</svg>
+
+         </button>
+         <form class="popup__form flex --dir-col" action="#">
+            <h4 class="popup__title">
+               Регистрация
+            </h4>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  Логин:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="1" type="text" placeholder="Логин">
+            </div>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  E-mail:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="2" type="text" placeholder="e-mail">
+            </div>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  Пароль:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="3" type="password" placeholder="********">
+            </div>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  Повторите пароль:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="4" type="password" placeholder="********">
+            </div>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  Фамилия:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="5" type="text" placeholder="Фамилия">
+            </div>
+            <div class="popup__form-item">
+               <label class="popup__subtitle f14_17" for="">
+                  Имя:
+               </label>
+               <input class="popup__input popup__subtitle f14_17" tabindex="6" type="text" placeholder="Имя">
+            </div>
+            <div class="checkbox flex">
+               <input class="checkbox__input" tabindex="7" checked type="checkbox" name="agree" id="agree" value="yes"/>
+               <label for="agree" class="checkbox__subtitle">
+                  <p class="popup__text">
+                     Я ознакомлен с <a class="link" href="#">правилами сервиса</a>, принимаю условия <a class="link" href="#">Политики конфиденциальности</a> и даю согласие на обработку своих данных
+                  </p>
+               </label>
+            </div>
+            <button class="popup__form-btn reg__btn" tabindex="8">
+               Зарегистрироваться
+            </button>
+            <a class="popup__transition f14_17 popup-link link" href="#popup-login">
+               Войти
             </a>
          </form>
       </div>
