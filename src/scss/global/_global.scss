@@ -36,17 +36,16 @@ img{
 }
 html,
 body {
-	min-height: 100%;
 	color: $colorBlack;
 	font-family: 'Montserrat', sans-serif;
 	font-size: $f18;
 	font-weight: 500;
-	overflow-x: hidden;
 }
 body.lock{
 	overflow: hidden;
 }
 ._wrapper{
+	overflow: hidden;
 	min-height: 100%;
 }
 .wrapper{
