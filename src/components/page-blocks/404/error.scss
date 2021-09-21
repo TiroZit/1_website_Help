@@ -1,0 +1,19 @@
+.error {
+   margin: 100px 0;
+}
+.error__title {
+   font-size: 144px;
+   letter-spacing: 0.08em;
+   color: $colorBlue;
+   margin-bottom: 20px;
+}
+.error__text {
+   color: $colorBlue;
+   max-width: 602px;
+   text-align: center;
+}
+.error__btn-back {
+   font-size: $f24;
+   margin-top: 50px;
+   padding: 16px 65px;
+}
