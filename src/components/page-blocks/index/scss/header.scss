@@ -1,4 +1,4 @@
-.header{
+.header {
    position: fixed;
    top: 0;
    left: 0;
@@ -9,11 +9,11 @@
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
    color: #fff;
 }
-.header-hat{
+.header-hat {
    display: flex;
    align-items: center;
 }
-.burger{
+.burger {
    display: none;
    background-color: transparent;
    width: 35px;
@@ -24,7 +24,7 @@
    z-index: 1;
    transition: all 0.3s ease 0s;
 }
-.burger--active{
+.burger--active {
    display: none;
    background-color: transparent;
    width: 35px;
@@ -34,31 +34,31 @@
    background-position: center;
    z-index: 1;
 }
-.menu{
+.menu {
 }
-.menu__list{
+.menu__list {
    display: flex;
 }
-.menu__list-item{
+.menu__list-item {
 }
-.menu__link{
+.menu__link {
    padding: 0 10px;
    line-height: 122%;
 }
-.sign-in{
+.sign-in {
    padding-left: 10px;
 }
-.logo-link{
+.logo-link {
    flex-grow: 1;
 }
-.social--menu{
+.social--menu {
    display: none;
 }
-.social__mail--header{
+.social__mail--header {
    display: none;
 }
 @media (max-width: 768px) {
-   .menu{
+   .menu {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -74,23 +74,23 @@
       margin-right: 0;
       overflow: auto;
    }
-   .active{
+   .active {
       right: 0;
    }
-   .menu__list{
+   .menu__list {
       flex-direction: column;
       margin-top: 45px;
    }
-   .menu__list-item{
+   .menu__list-item {
       text-align: center;
    }
-   .menu__link{
+   .menu__link {
       display: block;
       width: 100%;
       font-size: 24px;
       margin: 0;
    }
-   .social--menu{
+   .social--menu {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -99,21 +99,21 @@
       flex-grow: 1;
       margin: 20px 0;
    }
-   .social__link--menu{
+   .social__link--menu {
       padding: 10px;
    }
-   .social__mail--header{
+   .social__mail--header {
       display: block;
       padding: 0 10px 20px 10px;
    }
-   .sign-in{
+   .sign-in {
       margin: 0 15px;
       padding: 0;
    }
-   .menu__list-item{
+   .menu__list-item {
       margin: 15px 0;
    }
-   .burger{
+   .burger {
       display: block;
    }
 }

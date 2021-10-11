@@ -1,0 +1,14 @@
+.people__learn {
+   margin-top: 100px;
+   display: flex;
+   justify-content: space-between;
+}
+.people__learn-text {
+   max-width: 704px;
+}
+.people__learn-btn {
+   padding: 21px 70px;
+}
+.people__learn-btn:hover {
+   box-shadow: 0 0 15px #151515;
+}

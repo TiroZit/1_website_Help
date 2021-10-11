@@ -34,6 +34,9 @@
 img {
    pointer-events: none; // СЛОМАЮТСЯ КАРТИНКИ ТО ВИНА В ЭТОМ!!!
 }
+:focus {
+   color: $colorBlack;
+}
 html,
 body {
    height: 100%;
@@ -41,6 +44,9 @@ body {
    font-family: "Montserrat", sans-serif;
    font-size: $f18;
    font-weight: 500;
+}
+.wrapper {
+   margin-top: 150px;
 }
 body.lock {
    overflow: hidden;
@@ -53,9 +59,6 @@ body.lock {
    flex-direction: column;
    overflow: hidden;
    min-height: 100%;
-}
-.wrapper {
-   margin-top: 150px;
 }
 .container {
    @include container("1190px", "10px");
@@ -73,6 +76,16 @@ body.lock {
 .text {
    font-size: $f24;
    line-height: 121%;
+}
+.--white {
+   color: #fff;
+}
+.text-18 {
+   font-size: $f18;
+}
+.--f40 {
+   font-size: $f40;
+   line-height: 86%;
 }
 h1,
 h2,
@@ -129,6 +142,13 @@ a:hover:not(.btn) {
    font-family: "Montserrat", sans-serif;
    font-weight: 500;
    line-height: 122%;
+}
+.btn__link {
+   font-family: "Montserrat", sans-serif;
+   font-size: $f18;
+   font-weight: 500;
+   line-height: 122%;
+   color: $colorBlue;
 }
 .btn:hover {
    box-shadow: 0px 0px 20px #fff;
@@ -212,7 +232,7 @@ a:hover:not(.btn) {
    width: 42px;
    height: 63px;
    left: -60px;
-   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='42' height='63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 31.5L31.294 0 42 10.61 21.247 31.5 42 52.39 31.294 63 0 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
+   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 31.5L31.294 0 42 10.61 21.247 31.5 42 52.39 31.294 63 0 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
 }
 .slick-arrow.slick-prev:hover {
 }
@@ -220,7 +240,7 @@ a:hover:not(.btn) {
 .slick-arrow.slick-next {
    width: 42px;
    height: 63px;
-   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg width='42' height='63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 31.5L10.706 0 0 10.61 20.753 31.5 0 52.39 10.706 63 42 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
+   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M42 31.5L10.706 0 0 10.61 20.753 31.5 0 52.39 10.706 63 42 31.5z' fill='%232B3990'/%3E%3C/svg%3E");
    right: -60px;
 }
 .slick-arrow.slick-next:hover {
